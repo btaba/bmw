@@ -19,24 +19,15 @@
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
         <script src="Pikaday/pikaday.js"></script>
-        <script>
-
-            var picker = new Pikaday(
-            {
-                field: document.getElementById('datepicker'),
-                firstDay: 1,
-                minDate: new Date('2000-01-01'),
-                maxDate: new Date('2020-12-31'),
-                yearRange: [2000,2020]
-            });
-
-        </script>
+        <script src="js/dashboard.js"></script>
+        <script src="js/spin.min.js"></script>
+        
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="stylesheet" href="css/style-wide.css" />
             <link rel="stylesheet" href="css/style-noscript.css" />
-            <link rel="stylesheet" href="Pikaday/css/pikaday.css">
+            <!-- <link rel="stylesheet" href="Pikaday/css/pikaday.css"> -->
         </noscript>
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -76,9 +67,48 @@
         <!-- Main -->
             <article id="main">
 
-                <header class="special container">
-                    <span class="icon fa-mobile"></span>
-                    <h2><strong>Dashboard</strong></h2>
+                <header class="container" style="text-align: center">
+                    <!-- Put a loader, then on-load -->
+                    <div class="col-lg-7" id="progress-div" style="display:none">
+                        <div id="progress"></div>
+                        <h2>Loading Map...</h2>
+                        
+                          <!-- <div id="total-progress" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width:0%;" >
+                            0%
+                          </div> -->
+                    </div>
+
+                    <div class="dashboard" style="display:none">
+                        <h2><strong>Dashboard</strong></h2>
+
+                        <h3>WBY1Z4C55EV273078</h3>
+                        <h3 id="year_model">colorAccent, year, model</h3>
+
+                        <div class="bs-example" data-example-id="bordered-table">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Last Update</th>
+                                  <th id="lastupdate">First Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Fuel Level</th>
+                                  <td id="fuel">Mark</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Battery Status</th>
+                                  <td id="battery">Jacob</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Mileage</th>
+                                  <td id="mileage">Larry</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div><!-- /example -->
+                    </div>
                 </header>
                     
                 <!-- One -->
@@ -88,10 +118,13 @@
                             <div class="content">
                                 <section>
                                     <!-- Put date range here -->
-                                    <label for="datepicker">Date:</label>
-                                    <br>
-                                    <input type="text" id="datepicker">
+                                    <div>
+                                        <label for="datepicker1">Start Date:</label>
+                                        <input type="text" id="datepicker1" style="width: 20%">
 
+                                        <label for="datepicker2">End Date:</label>
+                                        <input type="text" id="datepicker2" style="width: 20%">
+                                    </div>
                                     <!-- Put Zendrive plot vs cost here -->
                                     <header>
                                         <h3>Zendrive Score</h3>
@@ -171,6 +204,29 @@
                 </ul>
             
             </footer>
+        <script>
 
+            var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker1'),
+                firstDay: 1,
+                minDate: new Date('2000-01-01'),
+                maxDate: new Date('2020-12-31'),
+                yearRange: [2000,2020]
+            });
+
+            var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker2'),
+                firstDay: 1,
+                minDate: new Date('2000-01-01'),
+                maxDate: new Date('2020-12-31'),
+                yearRange: [2000,2020]
+            });
+        </script>
+            // Set the default date for start and end dates
+
+
+        </script>
     </body>
 </html>
