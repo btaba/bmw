@@ -113,13 +113,13 @@
 
 				$window.on('load', function() {
 					homepage();
-					// $banner.scrollwatch({
-					// 	delay:		0,
-					// 	range:		1,
-					// 	anchor:		'top',
-					// 	on:			function() { $header.addClass('alt reveal'); },
-					// 	off:		function() { $header.removeClass('alt'); }
-					// });
+					$banner.scrollwatch({
+						delay:		0,
+						range:		1,
+						anchor:		'top',
+						on:			function() { $header.addClass('alt reveal'); },
+						off:		function() { $header.removeClass('alt'); }
+					});
 
 				});
 
