@@ -130,7 +130,7 @@ function dashboard_functions() {
         
         // remove datapoint from the beginning
         costChart();
-    }, 2500);
+    }, 3500);
 
 }
 
