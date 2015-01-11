@@ -8,18 +8,20 @@
     <head>
         <title>Ami</title>
 
-		<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
 	<link type="text/css" rel="stylesheet" href="src/css/graph.css">
 	<link type="text/css" rel="stylesheet" href="src/css/detail.css">
 	<link type="text/css" rel="stylesheet" href="src/css/legend.css">
 	<link type="text/css" rel="stylesheet" href="src/css/extensions.css?v=2">
 
 	<script src="src/js/d3.v3.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script>
-		jQuery.noConflict();
-	</script> 
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+
+
 	<script src="src/js/Rickshaw.js"></script>
 	<script src="src/js/Rickshaw.Class.js"></script>
 	<script src="src/js/Rickshaw.Compat.ClassList.js"></script>
@@ -54,10 +56,7 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.dropotron.min.js"></script>
-        <script src="js/jquery.scrolly.min.js"></script>
-        <script src="js/jquery.scrollgress.min.js"></script>
+
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
@@ -172,11 +171,10 @@
                                         <h3>Zendrive Score</h3>
                                     </header>
 
-<!--  THE GRAPH BODY STARTS HERE   -->
-					<div id="content">
+ <!--  THE GRAPH BODY STARTS HERE   -->
+					 <div id="content">
 						<form id="side_panel">
-							<h1>Random Data in the Future</h1>
-							<section><div id="legend"></div></section>
+							<section> <div id="legend"></div></section>
 							<section>
 								<div id="renderer_form" class="toggler">
 									<input type="radio" name="renderer" id="area" value="area" checked>
@@ -226,10 +224,8 @@
 						</div>
 
 					</div>
-
+ 
 					<script>
-
-					// set up our data series with 150 random data points
 
 					var seriesData = [ [], [], [], [], [], [], [], [], [] ];
 					var random = new Rickshaw.Fixtures.RandomData(150);
@@ -377,8 +373,8 @@
 
 					previewXAxis.render();
 
-					</script>
-<!--  THE GRAPH BODY ENDS HERE   -->									    
+					</script> 
+<!--  THE GRAPH BODY ENDS HERE   -->	 								    
 
                                 </section>
                             </div>
