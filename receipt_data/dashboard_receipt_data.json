@@ -2,36 +2,36 @@
     {
         "receipt_id": 1,
         "timestamp": "Oct.10,2014 10:39a.m.",
-        "Merchant": "Target",
-        "Address": "524 E. 15th St",
-        "City": "NY",
-        "State": "NY",
-        "zip": "10009",
-        "tag": "clothes",
+        "Merchant": "Chevron Charging Station",
+        "Address": "575 7th Street",
+        "City": "SF",
+        "State": "CA",
+        "zip": "94108",
+        "tag": "fuel charging",
         "Items": [{
-                "title": "Dior Dress",
-                "price": 15.00
+                "title": "",
+                "price": 59.00
             },
             {
-                "title": "Gucci Pants",
-                "price": 3.00
+                "title": "7 hours",
+                "price": 59.00
 
             }],
-        "Subtotal": 18.00,
-        "Tax": 2.00,
-        "Total": 20.00
+        "Subtotal": 50.00,
+        "Tax": 9.00,
+        "Total": 59.00
     },
     {
         "receipt_id": 2,
-        "timestamp": "Oct.10,2014 11:41a.m.",
-        "Merchant": "Fairways",
+        "timestamp": "Jan.10,2014 11:41a.m.",
+        "Merchant": "Chevron",
         "Address": "555 W. 42nd St",
         "City": "NY",
         "State": "NY",
         "zip": "11377",
-        "tag": "groceries",
+        "tag": "refuel",
         "Items": [{
-                "title": "Milk",
+                "title": "Charge",
                 "price": 3.05
             },
             {
@@ -46,18 +46,18 @@
     {
         "receipt_id": 3,
         "timestamp": "Oct.10,2014 12:39p.m.",
-        "Merchant": "Fairways",
+        "Merchant": "Shell",
         "Address": "555 W. 42nd St",
         "City": "NY",
         "State": "NY",
         "zip": "11377",
-        "tag": "groceries",
+        "tag": "Carwash",
         "Items": [{
-                "title": "Turkey",
+                "title": "Carwash",
                 "price": 37.00
             },
             {
-                "title": "Gravy",
+                "title": "wash",
                 "price": 2.99
 
             }],
@@ -67,15 +67,15 @@
     },
     {
         "receipt_id": 4,
-        "timestamp": "Oct.17,2014 13:24p.m.",
-        "Merchant": "Bob's Breads",
-        "Address": "555 W. 137th St",
-        "City": "NY",
-        "State": "NY",
+        "timestamp": "Jan.17,2015 13:24p.m.",
+        "Merchant": "Windshield Repair",
+        "Address": "555 W. 13th St",
+        "City": "LV",
+        "State": "NE",
         "zip": "10093",
-        "tag": "food",
+        "tag": "repair",
         "Items": [{
-                "title": "Turkey BLT",
+                "title": "Accident",
                 "price": 20.00
             }],
         "Subtotal": 20.00,
@@ -85,18 +85,18 @@
     {
         "receipt_id": 5,
         "timestamp": "Oct.11,2014 15:22p.m.",
-        "Merchant": "ABC Bananas",
+        "Merchant": "headlight",
         "Address": "555 E. 3rd St",
-        "City": "NY",
-        "State": "NY",
+        "City": "OAK",
+        "State": "CA",
         "zip": "10009",
-        "tag": "groceries",
+        "tag": "headlight",
         "Items": [{
-                "title": "Bananas",
-                "price": 4.09
+                "title": "headlight replacement",
+                "price": 45.09
             },
             {
-                "title": "Bread",
+                "title": "headlight",
                 "price": 2.00
 
             }],
@@ -107,18 +107,18 @@
     {
         "receipt_id": 6,
         "timestamp": "Oct.11,2014 17:34p.m.",
-        "Merchant": "APC",
+        "Merchant": "Carwash",
         "Address": "92 W. 3rd St",
         "City": "NY",
         "State": "NY",
         "zip": "10008",
-        "tag": "clothing",
+        "tag": "detailing",
         "Items": [{
-                "title": "Hat",
-                "price": 54.00
+                "title": "car wash",
+                "price": 154.00
             },
             {
-                "title": "Raw Denim",
+                "title": "car wash",
                 "price": 37.00
 
             }],
@@ -131,17 +131,17 @@
         "timestamp": "Oct.11,2014 18:19p.m.",
         "Merchant": "Walmart",
         "Address": "555 W. 42nd St",
-        "City": "NY",
-        "State": "NY",
-        "zip": "11377",
-        "tag": "groceries",
+        "City": "Miami",
+        "State": "FL",
+        "zip": "33066",
+        "tag": "Parking Fee",
         "Items": [{
-                "title": "cucumbers",
+                "title": "Parking Rental Spot",
                 "price": 3.05
             },
             {
-                "title": "cheese curds",
-                "price": 3.00
+                "title": "Parking",
+                "price": 13.00
 
             }],
         "Subtotal": 6.05,
@@ -151,14 +151,14 @@
     {
         "receipt_id": 8,
         "timestamp": "Oct.12,2014 12:24a.m.",
-        "Merchant": "New York Casino",
+        "Merchant": "Parking Ticket",
         "Address": "91 10th Ave",
         "City": "NY",
         "State": "NY",
         "zip": "10009",
-        "tag": "food",
+        "tag": "tickets",
         "Items": [{
-                "title": "Drinks",
+                "title": "Cost of Speeding Ticket",
                 "price": 50.00
             },
             {
