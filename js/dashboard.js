@@ -168,6 +168,9 @@ function costChart() {
     if (visits < 0) visits = 7;
   }
   
+  if (visits < 50) {
+    sendSMS("Tushar, you suck balls");
+  }
 
   zenChart.dataProvider.push({
       date: newDate,
@@ -444,6 +447,19 @@ function chartInit() {
   })
 }
 
+function sendSMS(data) {
+    // function below will run clear.php?h=michael
+    $.ajax({
+        type: "GET",
+        url: "sendSMS.php" ,
+        data: { text: data },
+        success : function() { 
+
+            // location.reload();
+
+        }
+    });
+}
 
 
 

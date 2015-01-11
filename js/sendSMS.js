@@ -1,5 +1,5 @@
 //require the Twilio module and create a REST client
-var client = require('/usr/lib/node_modules/twilio/lib')('AC76de558201b9927e3bdb03f209f15a81', '4ba4e3995a2e1fd5de33d8af2676a84f');
+// var client = require('/usr/lib/node_modules/twilio/lib')('AC76de558201b9927e3bdb03f209f15a81', '4ba4e3995a2e1fd5de33d8af2676a84f');
 
 //Send an text message
 client.sendMessage({
