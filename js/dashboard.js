@@ -15,6 +15,8 @@ var zenChart;
 var zenChartData = [];
 var day;
 var firstDate;
+var flagC=0;
+var flagS=0;
 $(document).ready(function () {
     // alert("message");
     $('#progress-div').css('display','inline');
@@ -265,22 +267,28 @@ function aScore(startPercent, endPercent) {
 
       if(progress<0.7)
       {
-        sendCall()
-        if(progress<0.3)
-        {
-            if(Math.floor(Math.random() * 6) + 1 > 3) sendSMS("Your car needs service ASAP")
-            else   sendSMS("You shoulnd't be driving today")
-        }
-        
-        
-        if(progress>0.3 && progress <0.6)
-        {
-            if(Math.floor(Math.random() * 6) + 1 > 4) sendSMS("Don't drive more than 60 miles/hr today evening")
-            else if(Math.floor(Math.random() * 6) + 1 < 4 && Math.floor(Math.random() * 6) + 1 >2) 
-            { sendSMS(" Take I-101 while going to Mountain View") }
-            else sendSMS("You are not driving very good since last week")
-        }
+        if (flagC == 0)
+        {sendCall()
+          flagC=1}
 
+
+        if (flagS<6){
+          if(progress<0.3)
+          {
+              if(Math.floor(Math.random() * 6) + 1 > 3) sendSMS("Your car needs service ASAP")
+              else   sendSMS("You shoulnd't be driving today")
+          }
+          
+          
+          if(progress>0.3 && progress <0.6)
+          {
+              if(Math.floor(Math.random() * 6) + 1 > 4) sendSMS("Don't drive more than 60 miles/hr today evening")
+              else if(Math.floor(Math.random() * 6) + 1 < 4 && Math.floor(Math.random() * 6) + 1 >2) 
+              { sendSMS(" Take I-101 while going to Mountain View") }
+              else sendSMS("You are not driving very good since last week")
+          }
+          flagS= flagS +1
+        }
       }
 
       if (progress < .3 ) {
