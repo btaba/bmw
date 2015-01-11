@@ -5,34 +5,34 @@
       "delta": -20
     },
     "daily_scores": [
-      {
-        "zendrive_score": 62,
+    {
+        "zendrive_score": 53,
         "fuel_efficiency_score": 82,
-        "date": "2015-01-01",
+        "date": "2014-12-13",
         "control_score": 69,
         "cautious_score": 56,
         "focused_score": 66
       },
       {
-        "zendrive_score": 61,
+        "zendrive_score": 47,
         "fuel_efficiency_score": 80,
-        "date": "2015-01-02",
+        "date": "2014-12-14",
         "control_score": 89,
         "cautious_score": 51,
         "focused_score": 61
       },
       {
-        "zendrive_score": 57,
+        "zendrive_score": 90,
         "fuel_efficiency_score": 79,
-        "date": "2015-01-03",
+        "date": "2014-12-15",
         "control_score": 93,
         "cautious_score": 38,
         "focused_score": 64
       },
       {
-        "zendrive_score": 44,
+        "zendrive_score": 20,
         "fuel_efficiency_score": 80,
-        "date": "2015-01-04",
+        "date": "2014-12-16",
         "control_score": 97,
         "cautious_score": 31,
         "focused_score": 40
@@ -40,7 +40,63 @@
       {
         "zendrive_score": 45,
         "fuel_efficiency_score": 85,
-        "date": "2015-01-05",
+        "date": "2014-12-17",
+        "control_score": 96,
+        "cautious_score": 23,
+        "focused_score": 52
+      },
+      {
+        "zendrive_score": 87,
+        "fuel_efficiency_score": 85,
+        "date": "2014-12-18",
+        "control_score": 76,
+        "cautious_score": 29,
+        "focused_score": 43
+      },
+      {
+        "zendrive_score": 34,
+        "fuel_efficiency_score": 82,
+        "date": "2014-12-19",
+        "control_score": 69,
+        "cautious_score": 56,
+        "focused_score": 66
+      },
+      {
+        "zendrive_score": 54,
+        "fuel_efficiency_score": 82,
+        "date": "2014-12-20",
+        "control_score": 69,
+        "cautious_score": 56,
+        "focused_score": 66
+      },
+      {
+        "zendrive_score": 61,
+        "fuel_efficiency_score": 80,
+        "date": "2014-12-21",
+        "control_score": 89,
+        "cautious_score": 51,
+        "focused_score": 61
+      },
+      {
+        "zendrive_score": 57,
+        "fuel_efficiency_score": 79,
+        "date": "2014-12-22",
+        "control_score": 93,
+        "cautious_score": 38,
+        "focused_score": 64
+      },
+      {
+        "zendrive_score": 44,
+        "fuel_efficiency_score": 80,
+        "date": "2014-12-23",
+        "control_score": 97,
+        "cautious_score": 31,
+        "focused_score": 40
+      },
+      {
+        "zendrive_score": 45,
+        "fuel_efficiency_score": 85,
+        "date": "2014-12-24",
         "control_score": 96,
         "cautious_score": 23,
         "focused_score": 52
@@ -48,10 +104,138 @@
       {
         "zendrive_score": 42,
         "fuel_efficiency_score": 85,
-        "date": "2015-01-06",
+        "date": "2014-12-26",
         "control_score": 76,
         "cautious_score": 29,
         "focused_score": 43
+      },
+      {
+        "zendrive_score": 62,
+        "fuel_efficiency_score": 82,
+        "date": "2014-12-27",
+        "control_score": 69,
+        "cautious_score": 56,
+        "focused_score": 66
+      },
+      {
+        "zendrive_score": 61,
+        "fuel_efficiency_score": 80,
+        "date": "2014-12-28",
+        "control_score": 89,
+        "cautious_score": 51,
+        "focused_score": 61
+      },
+      {
+        "zendrive_score": 57,
+        "fuel_efficiency_score": 79,
+        "date": "2014-12-29",
+        "control_score": 93,
+        "cautious_score": 38,
+        "focused_score": 64
+      },
+      {
+        "zendrive_score": 44,
+        "fuel_efficiency_score": 80,
+        "date": "2014-12-30",
+        "control_score": 97,
+        "cautious_score": 31,
+        "focused_score": 40
+      },
+      {
+        "zendrive_score": 45,
+        "fuel_efficiency_score": 85,
+        "date": "2014-12-31",
+        "control_score": 96,
+        "cautious_score": 23,
+        "focused_score": 52
+      },
+      {
+        "zendrive_score": 42,
+        "fuel_efficiency_score": 85,
+        "date": "2015-01-01",
+        "control_score": 76,
+        "cautious_score": 29,
+        "focused_score": 43
+      },
+      {
+        "zendrive_score": 62,
+        "fuel_efficiency_score": 82,
+        "date": "2015-01-02",
+        "control_score": 69,
+        "cautious_score": 56,
+        "focused_score": 66
+      },
+      {
+        "zendrive_score": 61,
+        "fuel_efficiency_score": 80,
+        "date": "2015-01-03",
+        "control_score": 89,
+        "cautious_score": 51,
+        "focused_score": 61
+      },
+      {
+        "zendrive_score": 57,
+        "fuel_efficiency_score": 79,
+        "date": "2015-01-04",
+        "control_score": 93,
+        "cautious_score": 38,
+        "focused_score": 64
+      },
+      {
+        "zendrive_score": 44,
+        "fuel_efficiency_score": 80,
+        "date": "2015-01-05",
+        "control_score": 97,
+        "cautious_score": 31,
+        "focused_score": 40
+      },
+      {
+        "zendrive_score": 45,
+        "fuel_efficiency_score": 85,
+        "date": "2015-01-06",
+        "control_score": 96,
+        "cautious_score": 23,
+        "focused_score": 52
+      },
+      {
+        "zendrive_score": 42,
+        "fuel_efficiency_score": 85,
+        "date": "2015-01-07",
+        "control_score": 76,
+        "cautious_score": 29,
+        "focused_score": 43
+      },
+      {
+        "zendrive_score": 62,
+        "fuel_efficiency_score": 82,
+        "date": "2015-01-08",
+        "control_score": 69,
+        "cautious_score": 56,
+        "focused_score": 66
+      },
+      {
+        "zendrive_score": 61,
+        "fuel_efficiency_score": 80,
+        "date": "2015-01-09",
+        "control_score": 89,
+        "cautious_score": 51,
+        "focused_score": 61
+      },
+      {
+        "zendrive_score": 57,
+        "fuel_efficiency_score": 79,
+        "date": "2015-01-10",
+        "control_score": 93,
+        "cautious_score": 38,
+        "focused_score": 64
+      },
+      {
+        "zendrive_score": 44,
+        "fuel_efficiency_score": 80,
+        "date": "2015-01-11",
+        "control_score": 97,
+        "cautious_score": 31,
+        "focused_score": 40
       }
     ],
     "fuel_efficiency_score": {
