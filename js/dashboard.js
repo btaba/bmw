@@ -168,7 +168,7 @@ function costChart() {
     if (visits < 0) visits = 7;
   }
   
-  if (visits < 50) {
+  if (visits < 30) {
     sendSMS("Tushar, you suck balls");
   }
 
