@@ -262,29 +262,33 @@ function aScore(startPercent, endPercent) {
       foreground.attr('d', arc.endAngle(twoPi * progress)).attr('fill',color).attr('stroke',color);
       front.attr('d', arc.endAngle(twoPi * progress)).attr('fill',color);
       var textStat = '';
-      if (progress < .3 ) {
-        textStat = '   Oh Crap'
-        sendCall()
 
-        if (rnd(5,1) > 2){
-            sendSMS("Your car needs service ASAP!")
+      if(progress<0.7)
+      {
+        sendCall()
+        if(progress<0.3)
+        {
+            if(Math.floor(Math.random() * 6) + 1 > 3) sendSMS("Your car needs service ASAP")
+            else   sendSMS("You shoulnd't be driving today")
         }
-        else {
-            sendSMS("You shoulnd't be driving today")
+        
+        
+        if(progress>0.3 && progress <0.6)
+        {
+            if(Math.floor(Math.random() * 6) + 1 > 4) sendSMS("Don't drive more than 60 miles/hr today evening")
+            else if(Math.floor(Math.random() * 6) + 1 < 4 && Math.floor(Math.random() * 6) + 1 >2) 
+            { sendSMS(" Take I-101 while going to Mountain View") }
+            else sendSMS("You are not driving very good since last week")
         }
+
+      }
+
+      if (progress < .3 ) {
+        textStat = '   Oh Crap'        
     }
       else if (progress < .5 && progress >= .30) {
         textStat = '   Very Bad'
 
-        if (rnd(10,1) > 7){
-            sendSMS("Don't drive more than 60 miles/hr today evening")
-        }
-        else if (rnd(10,1) < 7 && rnd(10,1) > 3){
-            sendSMS(" Take I-101 while going to Mountain View")
-        }
-        else {
-            sendSMS("You are not driving very good since last week")
-        }
       }
       else if (progress >= .50 && progress < .70) 
         {
@@ -296,7 +300,6 @@ function aScore(startPercent, endPercent) {
       else if(progress >= .85) {
         textStat = '   Great'
       }
-
 
       numberText.html(formatPercent(progress)+textStat);
   }

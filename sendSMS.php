@@ -18,6 +18,4 @@ $token = "4ba4e3995a2e1fd5de33d8af2676a84f";
 $client = new Services_Twilio($sid, $token);
  
 $client->account->messages->sendMessage("6465028711", "+16072167043", $text);
-
-
 ?>
