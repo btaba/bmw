@@ -28,6 +28,7 @@
         <script src="js/dashboard.js"></script>
         <script src="js/spin.min.js"></script>
         <script src="http://www.amcharts.com/lib/amcharts.js" type="text/javascript"></script>
+        <script src="js/RainbowVis-JS.js" type="text/javascript"></script>
         
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
@@ -43,7 +44,7 @@
     
         <!-- Header -->
             <header id="header" class="skel-layers-fixed">
-                <h1 id="logo"><a href="index.html">Ami Logo</span></a></h1>
+                <h1 id="logo"><a href="index.html"><img src="images/ami2-03-07.png" style="width: 57px"></span></a></h1>
                 <nav id="nav">
                     <ul>
                         <li class="current"><a href="index.html">Welcome</a></li>
@@ -125,19 +126,27 @@
                             <div class="content" style="display:none">
                                 <section>
                                     <!-- Put date range here -->
-                                    <div>
+                                    <!-- <div>
                                         <label for="datepicker1">Start Date:</label>
                                         <input type="text" id="datepicker1" style="width: 20%">
 
                                         <label for="datepicker2">End Date:</label>
                                         <input type="text" id="datepicker2" style="width: 20%">
-                                    </div>
+                                    </div> -->
                                     <!-- Put Zendrive plot vs cost here -->
 
-
-                                    <div id="aScore"><h3>Ami Score</h3></div>
-                                    <div id="costChart" style="width: 100%; height: 200px;"></div>
-
+                                    <div style="float: left">
+                                        <br>
+                                        How Am I Doing:
+                                        <div id="aScore"></div>
+                                    </div>
+                                    <div stlye="float:right"> 
+                                        <b>Moving Average Vehicle Cost Compared to Other Drivers in Your Area</b>
+                                        <div id="costChart" style="width: 70%; height: 200px;"></div>
+                                        <br>
+                                        <b>Zendrive Score</b>
+                                        <div id="zenChart" style="width: 70%; height: 200px;"></div>
+                                    </div>
 
                                 </section>
                             </div>
@@ -215,23 +224,23 @@
             </footer>
         <script>
 
-            var picker = new Pikaday(
-            {
-                field: document.getElementById('datepicker1'),
-                firstDay: 1,
-                minDate: new Date('2000-01-01'),
-                maxDate: new Date('2020-12-31'),
-                yearRange: [2000,2020]
-            });
+            // var picker = new Pikaday(
+            // {
+            //     field: document.getElementById('datepicker1'),
+            //     firstDay: 1,
+            //     minDate: new Date('2000-01-01'),
+            //     maxDate: new Date('2020-12-31'),
+            //     yearRange: [2000,2020]
+            // });
 
-            var picker = new Pikaday(
-            {
-                field: document.getElementById('datepicker2'),
-                firstDay: 1,
-                minDate: new Date('2000-01-01'),
-                maxDate: new Date('2020-12-31'),
-                yearRange: [2000,2020]
-            });
+            // var picker = new Pikaday(
+            // {
+            //     field: document.getElementById('datepicker2'),
+            //     firstDay: 1,
+            //     minDate: new Date('2000-01-01'),
+            //     maxDate: new Date('2020-12-31'),
+            //     yearRange: [2000,2020]
+            // });
         </script>
             // Set the default date for start and end dates
 
