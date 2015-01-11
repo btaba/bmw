@@ -1,0 +1,36 @@
+{
+ "name": "Expenditure",
+ "children": [
+  {
+     "name": "Food",
+     "children": [
+      {"name": "Eating Out", "children": [
+					    {"name": "Fast Food", "children": [
+					    	{"name": "Mc Donalds", "size": 45},
+  						{"name": "Burger King", "size":22}, {"name": "Taco Bell", "size": 34}																				
+										]},		
+					    {"name": "Asian", "children": [{"name": "Asian Noodle House", "size": 14},{"name": "Xi'an Famous Food", "size": 16},{"name": "Xo Kitchen", "size": 12}]},					
+					    {"name": "Mexican", "children": [{"name": "Hot Jalepenos", "size": 12},{"name": "That Burritto Place", "size": 18}]},					
+					    {"name": "Indian Food", "children": [{"name": "Taj Mahal Palace", "size": 38},{"name": "Pongal", "size": 25}, {"name": "Kathi Roll", "size": 15},{"name": "Seva", "size": 22}]},
+					    {"name": "Thai Food", "children": [{"name": "Little Thai Kitchen", "size": 18},{"name": "Pure Thai Cookhouse", "size": 21},{"name": "Joya", "size": 14}]}								
+					 ]},
+      {"name": "Veggies", "children": [{"name": "Potatoes", "size": 9},{"name": "Tomatoes", "size": 11},{"name": "Onions", "size": 8},{"name": "Lettuce", "size": 9},{"name": "Carrots", "size": 9},{"name": "Pickle", "size": 4},{"name": "Spinach", "size": 8},{"name": "Brocolli", "size": 6}]},
+      {"name": "Sweets", "children": [{"name": "Ice-Cream", "size": 22},{"name": "macaroons", "size": 8},{"name": "Cookies", "size": 34}]},
+      {"name": "Bread", "children": [{"name": "White Bread", "size": 12},{"name": "Frozen Pancakes", "size": 16},{"name": "French Bread", "size": 4},{"name": "Bagels", "size": 11}]},
+      {"name": "Dairy", "children": [{"name": "Cheese", "size": 13},{"name": "Milk", "size": 18},{"name": "Yogurt", "size": 28},{"name": "Butter Spread", "size": 8}]},
+      {"name": "Fruits", "children": [{"name": "Apple", "size": 6},{"name": "Mangoes", "size": 22},{"name": "Strawberries", "size": 12},{"name": "Grapes", "size": 16}]},
+      {"name": "Meat", "children": [{"name": "Fish", "size": 24},{"name": "Chicken Breast", "size": 14},{"name": "Lamb", "size": 9},{"name": "Goat", "size": 18}]}
+     ]
+    },
+{"name": "Beverages", "children": [{"name": "Coffee/Tea", "children": [{"name": "Starbucks Cappucino", "size": 64},{"name": "Frappucino", "size": 36},{"name": "Iced Tea", "size": 22}]},
+{"name": "Alcohol", "children": [{"name": "Tequila", "size": 36},{"name": "Beer", "size": 48},{"name": "Vodka", "size": 45},{"name": "Red Wine", "size": 52},{"name": "Mixed Drinks", "size": 122}]},
+{"name": "Soda", "children": [{"name": "Coke", "size": 2},{"name": "Mist", "size": 4},{"name": "Ginger Ale", "size": 8}]}, 
+{"name": "Polan Spring Water", "size": 12}]},
+{"name": "Clothing", "children": [{"name": "T-shirts/Shirts", "children": [{"name": "Blackberry Shirt", "size": 35},{"name": "Gap Tees", "size": 18}]},{"name": "Lowers", "children": [{"name": "Slim Fit Trousers", "size": 28},{"name": "Levis Jeans", "size": 31},{"name": "H&M Shorts", "size": 21}]},
+{"name": "Accessories", "children": [{"name": "Hat", "size": 12},{"name": "Shoes", "size": 92},{"name": "Watch", "size": 112}]},{"name": "socks", "size": 12}]},
+{"name": "Electronics", "children": [{"name": "iPhone", "size": 415},{"name": "Laptop Repair", "size": 205},{"name": "Headphones", "size": 120}]},
+{"name": "Health", "children": [{"name": "Doctor", "size": 160},{"name": "Gym", "size": 90},{"name": "Insurance", "size": 328}]},
+{"name": "House", "children": [{"name": "Rent", "size": 1550},{"name": "Internet", "size": 35},{"name": "Netflix", "size": 8}, {"name": "Miscellaneous", "children": [{"name": "Rug", "size": 10},{"name": "Plumbing/Cleaning", "children": [{"name": "Toliet Cleaner", "size": 6},{"name": "Mopper", "size": 12}]},{"name": "Hardware Toolkit", "size": 45}]}
+]}
+]}
+
