@@ -1,0 +1,221 @@
+<!-- I am a banner  --><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ami</title>    
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.css.map" type="text/css" rel="stylesheet">
+    <link href="./css/style-receipt.css" rel="stylesheet" type="text/css"  />
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="./css/theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/theme-responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- NAVBAR -->
+
+        <div class="navbar navbar-fixed-top" role="navigation">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                   <a class="navbar-brand" id="logo" href="">
+          <img src="" alt="Home" style="
+             width: 150px;
+             padding-top: 4px;
+              ">
+                    </div>
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="VIZtabs.html">Analytics</a></li>
+                        <!-- <li><a href="sellMyData.html">Sell My Data</a></li> -->
+        <!--                 {% if user.is_authenticated %}
+                        <li><a href="{% url 'accounts:profile' user  %}">My Account</a></li>
+                        {% endif %} -->
+                      </ul>
+
+                      <ul class = "nav navbar-nav pull-right">
+
+                        
+                        <!-- {% if not user.is_authenticated %} -->
+                        <!-- <li class="dropdown navbar-right">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in<b class="caret"></b></a>
+                          <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                            <li>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <form class="form" role="form" method="post" action="{% url 'accounts:login' %}" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                      <label class="sr-only" for="exampleInputEmail2">Username</label>
+                                      <input type="text" name="username" class="form-control" id="exampleInputEmail2" placeholder="Username" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                      <input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li> -->
+                      <!--   {% endif %} -->
+<!-- 
+                        <li class="dropdown navbar-right">
+                          <ul class="nav navbar-nav"> -->
+                          <!-- {% if not user.is_authenticated %} -->
+
+                            
+                           
+        <!--                     {% else %}
+         -->                    
+                            <li class="dropdown navbar-right">
+
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><!-- {{ user.username }} -->18R3xvbF71kxAmpzmZWLaQeBVK22E51qtE<b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <!-- Button trigger modal -->
+                                <!-- <li><a href="account.html">My account</a></li> -->
+                                <li><a href="settings.html">Settings</a></li>
+                                <li><a href="index.html">Sign out</a></li>
+                              </ul>
+                            </li>
+
+<!-- 
+                            <li class="dropdown navbar-right">
+                              <a href="#" class="dropdown-toggle glyphicon glyphicon-plus" style="font-size:24px;" data-toggle="dropdown"></a>
+                              <ul class="dropdown-menu">
+                                <li><a id="createCorkButton" data-target="#createCorkModal">Add a Card</a></li>
+                                <li><a id="createBasketButton" data-target="#createBasketModal">Set Spending Goals</a></li>
+ 
+                              </ul>
+                            </li> -->
+                            <!-- <li><a href="">Sign out</a></li> -->
+                         <!--    {% endif%} -->
+                          </ul>
+                        </li>
+                        <!-- <li><a href="">Sign out</a></li> -->
+                      </ul>
+                        
+
+                      <!-- {% endif %} -->
+
+                    </div><!--/.navbar-collapse -->
+                  </div>
+                </div>
+
+        <div class="container" id="receiptContainer">
+            <div id="sorts" class="btn-group">  
+        <button class="btn btn-default active" data-sort-by="original-order">Date</button>
+          <!-- <button class="btn btn-default" data-sort-by="merchant">Merchant</button> -->
+          <button class="btn btn-default" data-sort-by="total">Price</button>
+          <!-- <button class="btn btn-default" data-sort-by="cardType">Card Type</button> -->
+        </div>
+        <button id="receiptSortType" class="btn btn-primary" style="float:right; margin-right:40px"><span class="glyphicon glyphicon-chevron-up">Ascending Order</span></button>
+        
+
+            <div id="items" class="isotope" style="clear: both" row="">
+            <script type="text/template" id="receiptTemplate">
+                <div class="element-item" row="<%- receipt_id %>">
+                <div class="editNav">
+                  <div class="border"></div>
+                  <div class="inner"></div>
+                </div>
+              
+                  <div class="item-content" style="padding-top: 0px">
+                    <div class="description">
+                      <h3 class="merchant"><%- Merchant %></h3>
+                        <% _.each(Items, function(item) { %>
+                            <div id="itemized_pin"><span style=""><%- item.title %>:</span> <span style="float:right"> <img src=""><%- twoDigit(item.price) %></span></div>
+                        <% }) %>
+                        Total Price: <p class="total" style="float:right;display: inline;"><img src=""><%- twoDigit(Total) %></p>
+
+                    </div>
+
+                    <div class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i> <span class="date"><%- timestamp %></span>
+                        <br>
+                        <i class="glyphicon glyphicon-user"></i>  
+                        <br>
+
+
+
+                    </div>
+                  </div>
+              </div>
+            </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- HOME --> 
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/jquery-ui-1.10.4.js"></script>
+    <script src="./js/jquery.ajax.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.masonry.min.js"></script>
+    <script src="./js/packery.pkgd.min.js"></script>
+    <script src="./js/move_receipts.js"></script>
+    <script src="./js/jquery.isotope.min.js"></script>
+
+<!-- Receipt Modal -->
+<div class="modal fade bs-example-modal-sm" id="receiptModal" tabindex="-1" role="dialog" aria-labelledby="receiptModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div id="fakeReceipt">
+          <div id="merchant">
+          </div>
+          <div id="address">
+          </div>
+          <div id="date">
+          </div>
+          <div id="itemized">
+          </div>
+          <div id="subtotal">
+          </div>
+          <div id="tax">
+          </div>
+          <div id="total">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
