@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // alert("message");
-    $('#progress-div').removeClass('hidden');
+    $('#progress-div').css('display','inline');
     var opts = {
       lines: 9, // The number of lines to draw
       length: 0, // The length of each line
@@ -14,10 +14,12 @@ $(document).ready(function () {
       trail: 45, // Afterglow percentage
       shadow: false, // Whether to render a shadow
       className: 'spinner', // The CSS class to assign to the spinner
-      zIndex: 2e9, // The z-index (defaults to 2000000000)
+      // zIndex: 2e9, // The z-index (defaults to 2000000000)
+      top:'10%',
+      left:'65%'
     };
     spinner = new Spinner(opts).spin();
-    $('#progress').prepend(spinner.el);
+    $('#progress').append(spinner.el);
 
     var vin = 'WBY1Z4C55EV273078';
     var url = 'http://api.hackthedrive.com/vehicles/' + vin;
@@ -81,5 +83,6 @@ $(document).ready(function () {
       }
     });
 
-    $('#progress-div').removeClass('hidden');
+    $('#progress-div').css('display','none');
+    $('.dashboard').css('display','');
 })
