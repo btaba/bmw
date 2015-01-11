@@ -489,7 +489,7 @@ function sendSMS(data) {
     });
 }
 
-function sendCall(data) {
+function sendCall() {
     // function below will run clear.php?h=michael
     $.ajax({
         type: "GET",
