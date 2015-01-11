@@ -119,11 +119,11 @@ function modalReceipt(data) {
         $('#receiptModal .modal-body #date').html(object.timestamp);
         $('#receiptModal .modal-body #itemized').html('');
         $(object.Items).each(function() {
-            $('#receiptModal .modal-body #itemized').append("1 "+this.title+":    "+'<span style="float:right; padding-right:10px"><img src="image/bitcoin.png">'+twoDigit(this.price)+"</span><br>");
+            $('#receiptModal .modal-body #itemized').append("1 "+this.title+":    "+'<span style="float:right; padding-right:10px">&#36;'+twoDigit(this.price)+"</span><br>");
         })
-        $('#receiptModal .modal-body #subtotal').html('<span style="margin-left:-4px;">Subtotal:</span>'+'<span style="float:right; padding-right: 10px"><img src="image/bitcoin.png">'+twoDigit(object.Subtotal)+"</span><br>");
-        $('#receiptModal .modal-body #tax').html('<span style="margin-left:-4px">Tax:</span>'+'<span style="float:right; padding-right: 10px"><img src="image/bitcoin.png">'+twoDigit(object.Tax)+"</span><br>");
-        $('#receiptModal .modal-body #total').html('<span style="margin-left:-4px">Total:</span>'+'<span style="float:right; padding-right: 10px"><img src="image/bitcoin.png">'+twoDigit(object.Total)+"</span><br>");
+        $('#receiptModal .modal-body #subtotal').html('<span style="margin-left:-4px;">Subtotal:</span>'+'<span style="float:right; padding-right: 10px">&#36;'+twoDigit(object.Subtotal)+"</span><br>");
+        $('#receiptModal .modal-body #tax').html('<span style="margin-left:-4px">Tax:</span>'+'<span style="float:right; padding-right: 10px">&#36;'+twoDigit(object.Tax)+"</span><br>");
+        $('#receiptModal .modal-body #total').html('<span style="margin-left:-4px">Total:</span>'+'<span style="float:right; padding-right: 10px">&#36;'+twoDigit(object.Total)+"</span><br>");
 
         $('#receiptModal').modal('show');
     })

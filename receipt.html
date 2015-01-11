@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ami</title>    
     <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/jquery.scrollgress.min.js"></script>
     <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="./css/bootstrap-theme.css.map" type="text/css" rel="stylesheet">
     <link href="./css/style-receipt.css" rel="stylesheet" type="text/css"  />
     <link href="./css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
     <link href="./css/theme.css" rel="stylesheet" type="text/css">
     <link href="./css/theme-responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,107 +30,36 @@
 <body>
     <div id="wrap">
         <!-- NAVBAR -->
-
-        <div class="navbar navbar-fixed-top" role="navigation">
-                  <div class="container">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-
-                   <a class="navbar-brand" id="logo" href="">
-          <img src="" alt="Home" style="
-             width: 150px;
-             padding-top: 4px;
-              ">
-                    </div>
-                    <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="VIZtabs.html">Analytics</a></li>
-                        <!-- <li><a href="sellMyData.html">Sell My Data</a></li> -->
-        <!--                 {% if user.is_authenticated %}
-                        <li><a href="{% url 'accounts:profile' user  %}">My Account</a></li>
-                        {% endif %} -->
-                      </ul>
-
-                      <ul class = "nav navbar-nav pull-right">
-
-                        
-                        <!-- {% if not user.is_authenticated %} -->
-                        <!-- <li class="dropdown navbar-right">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in<b class="caret"></b></a>
-                          <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
-                            <li>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <form class="form" role="form" method="post" action="{% url 'accounts:login' %}" accept-charset="UTF-8" id="login-nav">
-                                    <div class="form-group">
-                                      <label class="sr-only" for="exampleInputEmail2">Username</label>
-                                      <input type="text" name="username" class="form-control" id="exampleInputEmail2" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                      <input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <button type="submit" class="btn btn-success btn-block">Sign in</button>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
+        <header id="header" class="skel-layers-fixed">
+                <h1 id="logo"><a href="index.html"><img src="images/ami2-03-07.png" style="width: 57px"></span></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="index.html">Welcome</a></li>
+                        <!-- <li class="submenu">
+                            <a href="">Layouts</a>
+                            <ul>
+                                <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                <li><a href="no-sidebar.html">No Sidebar</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="submenu">
+                                    <a href="">Submenu</a>
+                                    <ul>
+                                        <li><a href="#">Dolore Sed</a></li>
+                                        <li><a href="#">Consequat</a></li>
+                                        <li><a href="#">Lorem Magna</a></li>
+                                        <li><a href="#">Sed Magna</a></li>
+                                        <li><a href="#">Ipsum Nisl</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li> -->
-                      <!--   {% endif %} -->
-<!-- 
-                        <li class="dropdown navbar-right">
-                          <ul class="nav navbar-nav"> -->
-                          <!-- {% if not user.is_authenticated %} -->
+                        <li><a href="./index.html" class="button special">Log out</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-                            
-                           
-        <!--                     {% else %}
-         -->                    
-                            <li class="dropdown navbar-right">
-
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><!-- {{ user.username }} -->18R3xvbF71kxAmpzmZWLaQeBVK22E51qtE<b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                                <!-- Button trigger modal -->
-                                <!-- <li><a href="account.html">My account</a></li> -->
-                                <li><a href="settings.html">Settings</a></li>
-                                <li><a href="index.html">Sign out</a></li>
-                              </ul>
-                            </li>
-
-<!-- 
-                            <li class="dropdown navbar-right">
-                              <a href="#" class="dropdown-toggle glyphicon glyphicon-plus" style="font-size:24px;" data-toggle="dropdown"></a>
-                              <ul class="dropdown-menu">
-                                <li><a id="createCorkButton" data-target="#createCorkModal">Add a Card</a></li>
-                                <li><a id="createBasketButton" data-target="#createBasketModal">Set Spending Goals</a></li>
- 
-                              </ul>
-                            </li> -->
-                            <!-- <li><a href="">Sign out</a></li> -->
-                         <!--    {% endif%} -->
-                          </ul>
-                        </li>
-                        <!-- <li><a href="">Sign out</a></li> -->
-                      </ul>
-                        
-
-                      <!-- {% endif %} -->
-
-                    </div><!--/.navbar-collapse -->
-                  </div>
-                </div>
-
-        <div class="container" id="receiptContainer">
+        <div class="container" id="receiptContainer" style="margin-top: 65px;">
             <div id="sorts" class="btn-group">  
         <button class="btn btn-default active" data-sort-by="original-order">Date</button>
           <!-- <button class="btn btn-default" data-sort-by="merchant">Merchant</button> -->
@@ -147,14 +81,14 @@
                     <div class="description">
                       <h3 class="merchant"><%- Merchant %></h3>
                         <% _.each(Items, function(item) { %>
-                            <div id="itemized_pin"><span style=""><%- item.title %>:</span> <span style="float:right"> <img src=""><%- twoDigit(item.price) %></span></div>
+                            <div id="itemized_pin"><span style=""><%- item.title %>:</span> <span style="float:right"> &#36;<%- twoDigit(item.price) %></span></div>
                         <% }) %>
-                        Total Price: <p class="total" style="float:right;display: inline;"><img src=""><%- twoDigit(Total) %></p>
+                        Total Price: <p class="total" style="float:right;display: inline;"><%- twoDigit(Total) %></p>
 
                     </div>
 
                     <div class="meta">
-                        <i class="glyphicon glyphicon-calendar"></i> <span class="date"><%- timestamp %></span>
+                        <i class="glyphicon glyphicon-calendar"></i> <span class="date" style="font-size: 16px"><%- timestamp %></span>
                         <br>
                         <i class="glyphicon glyphicon-user"></i>  
                         <br>
@@ -167,7 +101,6 @@
             </script>
             </div>
         </div>
-    </div>
 
 
 
@@ -184,7 +117,7 @@
     <script src="./js/jquery.isotope.min.js"></script>
 
 <!-- Receipt Modal -->
-<div class="modal fade bs-example-modal-sm" id="receiptModal" tabindex="-1" role="dialog" aria-labelledby="receiptModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-sm" id="receiptModal" tabindex="-1" role="dialog" aria-labelledby="receiptModalLabel" aria-hidden="true" style="margin-top: 65px;">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
