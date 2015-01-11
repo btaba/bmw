@@ -14,14 +14,11 @@
 	<link type="text/css" rel="stylesheet" href="src/css/extensions.css?v=2">
 
 	<script src="src/js/d3.v3.js"></script>
-	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/jquery.scrollgress.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+		jQuery.noConflict();
+	</script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
-
-
 	<script src="src/js/Rickshaw.js"></script>
 	<script src="src/js/Rickshaw.Class.js"></script>
 	<script src="src/js/Rickshaw.Compat.ClassList.js"></script>
@@ -56,7 +53,10 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/jquery.scrollgress.min.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
@@ -111,16 +111,15 @@
 
                 <header class="container" style="text-align: center">
                     <!-- Put a loader, then on-load -->
-                    <div class="col-lg-7" id="progress-div" style="display:none">
-                        <div id="progress"></div>
+                    <div class="col-lg-7 hidden" id="progress-div">
                         <h2>Loading Map...</h2>
-                        
+                        <div id="progress"></div>
                           <!-- <div id="total-progress" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width:0%;" >
                             0%
                           </div> -->
                     </div>
 
-                    <div class="dashboard" style="display:none">
+                    <div class="dashboard hidden">
                         <h2><strong>Dashboard</strong></h2>
 
                         <h3>WBY1Z4C55EV273078</h3>
@@ -172,10 +171,11 @@
                                         <h3>Zendrive Score</h3>
                                     </header>
 
- <!--  THE GRAPH BODY STARTS HERE   -->
-					 <div id="content">
+<!--  THE GRAPH BODY STARTS HERE   -->
+					<div id="content">
 						<form id="side_panel">
-							<section> <div id="legend"></div></section>
+							<h1>Random Data in the Future</h1>
+							<section><div id="legend"></div></section>
 							<section>
 								<div id="renderer_form" class="toggler">
 									<input type="radio" name="renderer" id="area" value="area" checked>
@@ -225,8 +225,10 @@
 						</div>
 
 					</div>
- 
+
 					<script>
+
+					// set up our data series with 150 random data points
 
 					var seriesData = [ [], [], [], [], [], [], [], [], [] ];
 					var random = new Rickshaw.Fixtures.RandomData(150);
@@ -374,8 +376,8 @@
 
 					previewXAxis.render();
 
-					</script> 
-<!--  THE GRAPH BODY ENDS HERE   -->	 								    
+					</script>
+<!--  THE GRAPH BODY ENDS HERE   -->									    
 
                                 </section>
                             </div>
