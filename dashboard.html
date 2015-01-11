@@ -63,6 +63,7 @@
         <script src="js/init.js"></script>
         <script src="Pikaday/pikaday.js"></script>
         <script src="js/dashboard.js"></script>
+        <script src="js/spin.min.js"></script>
         
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
@@ -110,18 +111,46 @@
             <article id="main">
 
                 <header class="container" style="text-align: center">
-                    <!-- <span class="icon fa-mobile"></span> -->
+                    <!-- Put a loader, then on-load -->
+                    <div class="col-lg-7 hidden" id="progress-div">
+                        <h2>Loading Map...</h2>
+                        <div id="progress"></div>
+                          <!-- <div id="total-progress" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width:0%;" >
+                            0%
+                          </div> -->
+                    </div>
 
-                    <h2><strong>Dashboard</strong></h2>
+                    <div class="dashboard hidden">
+                        <h2><strong>Dashboard</strong></h2>
 
-                    <h3>WBY1Z4C55EV273078, year, model</h3>
-                    <ul>
-                        <li>Last Update</li>
-                        <li>Fuel level</li>
-                        <li>Battery Status</li>
-                        <li>Odometer</li>
-                    </ul>
-                    
+                        <h3>WBY1Z4C55EV273078</h3>
+                        <h3 id="year_model">colorAccent, year, model</h3>
+
+                        <div class="bs-example" data-example-id="bordered-table">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Last Update</th>
+                                  <th id="lastupdate">First Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Fuel Level</th>
+                                  <td id="fuel">Mark</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Battery Status</th>
+                                  <td id="battery">Jacob</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Mileage</th>
+                                  <td id="mileage">Larry</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div><!-- /example -->
+                    </div>
                 </header>
                     
                 <!-- One -->
