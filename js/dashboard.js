@@ -83,6 +83,9 @@ $(document).ready(function () {
       }
     });
 
+
+
     $('#progress-div').css('display','none');
     $('.dashboard').css('display','');
+    $('#content').css('display', '');
 })
