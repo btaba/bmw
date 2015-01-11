@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script language="javascript">
+        function sendSMS() {
+            // function below will run clear.php?h=michael
+            $.ajax({
+                type: "GET",
+                url: "sendSMS.php" ,
+                //data: { h: "michael" },
+                success : function() { 
+
+                    location.reload();
+
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <a id="cancel" href="#" onclick="sendSMS()">SendSMS</a>
+</body>
+
+
+</html>
